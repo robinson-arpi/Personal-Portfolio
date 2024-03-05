@@ -1,0 +1,122 @@
+:root{
+    --color-1: #0d152d;
+    --color-2: white;
+    --color-3: #a6b1c2;
+    --color-4: rgba(82, 73, 209, 0.473);
+    --color-5: #7e8186;
+    --color-sunshine: #52cbc2;
+}
+
+body{
+    margin: none;
+    padding: none;
+    background: var(--color-1);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+
+    
+}
+
+#black-background {
+    position: relative;
+    width: 100;
+    height: 100;
+    
+}
+
+#cursor {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%;
+    pointer-events: none;
+}
+
+#black-background:hover #cursor {
+    box-shadow: 0 0 500px 100px var(--color-4); /* Ajusta según tus preferencias */
+}
+
+
+header{
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    position: sticky;
+
+}
+
+.text-1{
+    color: var(--color-2) !important;
+    font-weight: bold;
+}
+
+.text-2{
+    color: var(--color-3) !important; 
+    font-size: 16px;    
+}
+
+.custom-icon {
+    font-size: 2rem;
+    margin-right: 2vw !important;
+    color: var(--color-3);
+    &:hover{
+        color: var(--color-2);
+    }
+}
+
+.custom-span-1{
+    color: var(--color-3);
+    margin-right: 2vw;
+    transform: scaleX(2);
+}
+
+.custom-span-2{
+    font-weight: bold;
+}
+
+.custom-span-2 a{
+    font-size: 14px;
+}
+
+.custom-nav-item:hover{
+    width: 200px; /* Ajusta el ancho al hacer hover */
+    padding-left: 20px; /* Ajusta el desplazamiento al hacer hover */
+}
+
+.custom-nav-item:hover .custom-span-1{
+    color: var(--color-2) !important;
+}
+
+.custom-nav-item:hover .custom-span-2 a{
+    color: var(--color-2) !important;
+}
+
+
+main{
+    overflow-y: auto;
+
+}
+
+.date{
+    color: var(--color-5);
+    font-weight: bold;
+}
+
+.custom-card{
+    border: 1px; /* Contorno con color */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.custom-card:hover{
+    border: 1px solid var(--color-sunshine); /* Contorno con color */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px var(--color-sunshine); /* Efecto de relieve */
+}
+
+.custom-card:hover h5{
+    color: var(--color-sunshine) !important;
+}
+
+.custom-card p{
+    font-size: 13px;
+}
