@@ -5,6 +5,9 @@
     --color-4: rgba(82, 73, 209, 0.473);
     --color-5: #7e8186;
     --color-sunshine: #52cbc2;
+    --color-sunshine-2: rgba(82, 203, 195, 0.308);
+
+    --color-highlight-2: #1e294ba9;
 }
 
 body{
@@ -13,19 +16,11 @@ body{
     background: var(--color-1);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
-
     
-}
-
-#black-background {
-    position: relative;
-    width: 100;
-    height: 100;
     
 }
 
 #cursor {
-    position: absolute;
     width: 1px;
     height: 1px;
     border-radius: 100%;
@@ -99,6 +94,7 @@ main{
 
 .date{
     color: var(--color-5);
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -108,9 +104,8 @@ main{
 }
 
 .custom-card:hover{
-    border: 1px solid var(--color-sunshine); /* Contorno con color */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px var(--color-sunshine); /* Efecto de relieve */
+    
+    background-color: var(--color-highlight-2);
 }
 
 .custom-card:hover h5{
@@ -119,4 +114,23 @@ main{
 
 .custom-card p{
     font-size: 13px;
+}
+
+.container-tag {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-tag{
+    color: var(--color-sunshine) !important;
+    background-color: var(--color-sunshine-2);
+    display: inline-block;
+    padding: 0.3em 01em;
+    
+    margin: 0.3em;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2rem;
 }
