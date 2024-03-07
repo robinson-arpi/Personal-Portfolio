@@ -50,6 +50,10 @@ header{
     font-size: 16px;    
 }
 
+.highlight-text{
+    color: var(--color-2) !important;
+}
+
 .custom-icon {
     font-size: 2rem;
     margin-right: 2vw !important;
